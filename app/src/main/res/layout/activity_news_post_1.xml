@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Activities.News.NewsPostActivity">
+
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sign_up_button"
+            android:layout_margin="25dp">
+
+            <EditText
+                android:id="@+id/news_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tell your story with priyo..."
+                android:gravity="left|start"
+                android:background="@color/transparent"
+                android:layout_above="@+id/postImage"
+                android:inputType="textMultiLine"/>
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/postImage"
+                android:padding="5dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/sign_up_button">-->
+
+
+
+    <!--</ScrollView>-->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_up_button"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:srcCompat="@mipmap/ic_camera"
+        app:menu_fab_size="normal"
+        app:backgroundTint="@color/colorPrimary"/>
+
+
+
+<!--<com.github.clans.fab.FloatingActionMenu-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/sign_up_button"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--app:menu_fab_size="normal"-->
+        <!--app:backgroundTint="@color/colorPrimary"-->
+        <!--app:menu_icon="@mipmap/ic_camera">-->
+
+    <!--</com.github.clans.fab.FloatingActionMenu>-->
+
+    <Button
+        android:id="@+id/sign_up_button"
+        style="@style/PrimaryTransparentButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/primary_button_height"
+        android:layout_alignParentBottom="true"
+        android:text="SHARE YOUR STORY"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

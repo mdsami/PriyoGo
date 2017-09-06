@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/company_logo_description"
+            android:src="@mipmap/landing_priyo" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:defaultNameCode="BD"
+            app:showFullName="true" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/CustomTextInputLayoutWithMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/CustomTextInputLayout">
+
+            <EditText
+                android:id="@+id/user_mobile_number_edit_text"
+                style="@style/CustomEditTextLogInSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/prompt_mobile_number"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/CustomTextInputLayoutWithMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:theme="@style/CustomTextInputLayout">
+
+            <EditText
+                android:id="@+id/user_full_name_edit_text"
+                style="@style/CustomEditTextLogInSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/prompt_full_name"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/otp_request_button"
+            style="@style/ButtonStyleRound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/primary_button_height"
+            android:layout_marginTop="@dimen/value30"
+            android:text="@string/get_code"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</ScrollView>

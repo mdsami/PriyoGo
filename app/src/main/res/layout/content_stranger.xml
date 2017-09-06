@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.Contacts.ContactActivity"
+    tools:showIn="@layout/app_bar_stranger">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/adView">
+
+            <RelativeLayout
+                android:id="@+id/contact_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contact_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/check_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/background_contact_selector_background"
+
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_contacts_all"
+                        style="@style/ContactsSelectorStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/background_left_round_checkbox"
+                        android:text="People you know" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_contacts_ipay"
+                        style="@style/ContactsSelectorStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_right_round_checkbox"
+                        android:text="People you may know" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/contact_header">
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+        <!--<com.google.android.gms.ads.AdView-->
+            <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/adView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--ads:adSize="SMART_BANNER"-->
+            <!--ads:adUnitId="@string/banner_ad_unit_id">-->
+        <!--</com.google.android.gms.ads.AdView>-->
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

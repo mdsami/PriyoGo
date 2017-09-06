@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundPrimary"
+    android:gravity="center"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp"
+    tools:context=".view.activity.TourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/landing_priyo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/landing_image" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextStylePrimaryLargeBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:gravity="center_horizontal"
+            android:text="@string/tour_page_title" />
+
+
+        <TextView
+            style="@style/TextStylePrimarySmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/value15"
+            android:gravity="center_horizontal"
+            android:text="@string/tour_page_text" />
+
+
+        <Button
+            android:id="@+id/lets_go_button"
+            style="@style/ButtonStyleRound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/primary_button_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/value30"
+            android:text="@string/tour_button_text" />
+    </LinearLayout>
+
+</RelativeLayout>

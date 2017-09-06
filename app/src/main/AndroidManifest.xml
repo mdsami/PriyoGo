@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.priyo.go">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Adding this line to make the app available for tablet users -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- android:name=".Utilities.MyApplication" -->
+    <application
+        android:name=".Utilities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.LauncherActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.TourActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Activities.Contacts.ContactActivity"
+            android:label="@string/title_activity_contact"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+        <activity
+            android:name=".Activities.News.NewsDetailsActivity"
+            android:label="@string/title_activity_news_details"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+        <provider
+            android:name=".PriyoContentProvider.NewsProvider"
+            android:authorities="com.priyo.go"
+            android:exported="false"
+            android:syncable="true" />
+
+        <!-- SyncAdapter's dummy authentication service -->
+        <service android:name=".PriyoSyncAdapter.StarAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- The SyncAdapter service -->
+        <service
+            android:name=".PriyoSyncAdapter.StarSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <!-- <service -->
+        <!-- android:name=".PriyoSyncAdapter.ContactSyncService" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.content.SyncAdapter" /> -->
+        <!-- </intent-filter> -->
+
+
+        <!-- <meta-data -->
+        <!-- android:name="android.content.SyncAdapter" -->
+        <!-- android:resource="@xml/syncadapter" /> -->
+        <!-- </service> -->
+
+        <activity
+            android:name=".Activities.News.PriyoCategoryNewsActivity"
+            android:label="@string/title_activity_priyo_category_news"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.News.SavedNewsActivity"
+            android:label="@string/title_activity_saved_news"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+
+        <service android:name=".Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.News.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.News.NotificationDetailsActivity"
+            android:label="@string/title_activity_notification_details"
+            android:parentActivityName=".Activities.News.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.NotificationActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.AboutActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.profile.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.people.PeopleDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.profile.UpdateProfileActivity"
+            android:label="@string/update_profile"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.activity.FeedbackActivity"
+            android:label="Feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.activity.BirthdaysActivity"
+            android:label="@string/title_activity_birthdays"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.wish.WishListActivity"
+            android:label="@string/title_activity_wish_list_t"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.News.NewsPostActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_news_post"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".Activities.HoroscopeActivity"
+            android:label="@string/title_activity_horoscope"
+            android:parentActivityName=".Activities.News.PriyoNewsTabActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.News.PriyoNewsTabActivity"
+            android:label="@string/title_activity_priyo_news_tabed"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Fragments.Dashboard.DashboardNewsFragment$MyService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Fragments.Dashboard.DashboardNewsFragment$MyService"
+            android:enabled="true"
+            android:exported="false" />
+        LoginService
+        <service
+            android:name=".service.LoginService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".service.FCMUpdateService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.activity.signup.SignupActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".view.activity.people.PeopleActivity"
+            android:label="@string/title_activity_people"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.business.BusinessActivity"
+            android:label="@string/title_activity_business"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.business.BusinessDetailsActivity"
+            android:label="@string/title_activity_business_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.News.PriyoNewsTabActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

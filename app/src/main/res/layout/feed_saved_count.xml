@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/profile_picture_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/saved_news"/>
+
+    <TextView
+        android:id="@+id/verification_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textColor="#FFFFFF"
+        android:textSize="8dp"
+        android:background="#FFCC00"
+        android:layout_alignRight="@+id/profile_picture_image_view"
+        android:layout_alignBottom="@+id/profile_picture_image_view" />
+</RelativeLayout>
+

@@ -1,0 +1,127 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin_double">32dp</dimen>
+    <dimen name="activity_horizontal_margin_semi_double">24dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_card">8dp</dimen>
+    <dimen name="activity_horizontal_margin_card">8dp</dimen>
+    <dimen name="activity_vertical_margin_double">24dp</dimen>
+    <dimen name="activity_vertical_margin_semi_double">32dp</dimen>
+    <dimen name="value0">0dp</dimen>
+    <dimen name="value1">1dp</dimen>
+    <dimen name="value2">2dp</dimen>
+    <dimen name="value4">4.0dip</dimen>
+    <dimen name="value5">5.0dip</dimen>
+    <dimen name="value6">6.0dip</dimen>
+    <dimen name="value10">10.0dip</dimen>
+    <dimen name="value12">12.0dip</dimen>
+    <dimen name="value15">15.0dip</dimen>
+    <dimen name="value18">18.0dip</dimen>
+    <dimen name="value20">20.0dip</dimen>
+    <dimen name="value25">25.0dip</dimen>
+    <dimen name="value30">30.0dip</dimen>
+    <dimen name="value48">48.0dip</dimen>
+    <dimen name="value50">50.0dip</dimen>
+    <dimen name="value60">60.0dp</dimen>
+    <dimen name="value70">70.0dp</dimen>
+    <dimen name="value80">80dip</dimen>
+    <dimen name="value110">110dip</dimen>
+    <dimen name="value140">140dip</dimen>
+    <dimen name="value150">150dip</dimen>
+    <dimen name="value160">160dip</dimen>
+    <dimen name="value180">180dip</dimen>
+    <dimen name="value200">200dip</dimen>
+    <dimen name="value230">230dip</dimen>
+    <dimen name="value250">250dip</dimen>
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="text_size_large_medium">24sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_small_medium">16sp</dimen>
+    <dimen name="text_size_small_medium_value18">18sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_extra_small_1">13sp</dimen>
+    <dimen name="text_size_extra_small">12sp</dimen>
+    <dimen name="text_size_extra_smaller">10sp</dimen>
+    <dimen name="review_item_vertical_spacing_dialog">12dp</dimen>
+    <dimen name="divider_space">1px</dimen>
+    <dimen name="iconified_button_border_width">1dp</dimen>
+    <dimen name="iconified_button_radius">3dp</dimen>
+    <dimen name="pager_indicator_size">8dp</dimen>
+    <dimen name="login_profile_image_size">100dp</dimen>
+    <dimen name="contact_switcher_radius">4dp</dimen>
+    <dimen name="ticket_comment_radius">3dp</dimen>
+    <dimen name="ticket_profile_picture_size">40dp</dimen>
+
+    <dimen name="primary_button_width">200dp</dimen>
+    <dimen name="primary_button_height">50dp</dimen>
+    <dimen name="primary_button_radius">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="card_margin">2dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_cover_height">120dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">14dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">11dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="priyo_image_height">200dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <dimen name="thumbnail_min_size">110dip</dimen>
+
+    <dimen name="titile_text_size_details_page">22sp</dimen>
+    <dimen name="details_page_text_margin">10dp</dimen>
+    <dimen name="details_page_spacing_view">15dp</dimen>
+    <dimen name="details_page_web_margin">5dp</dimen>
+    <dimen name="details_page_flex_layout_height">35dp</dimen>
+    <dimen name="details_page_flex_layout_min_width">60dp</dimen>
+
+    <dimen name="details_page_web_text_size">20px</dimen>
+
+    <dimen name="more_news_image_size">55dip</dimen>
+
+    <dimen name="more_pading">5dip</dimen>
+
+    <dimen name="tabed_news_card_margin">0dip</dimen>
+    <dimen name="tabed_news_gap">3dip</dimen>
+
+    <dimen name="tabed_new_title_text_size">18sp</dimen>
+    <dimen name="tabed_new_subtitle_text_size">15sp</dimen>
+    <dimen name="tabed_new_time_text_size">14sp</dimen>
+
+    <dimen name="more_news_titlebar_padding">6dp</dimen>
+    <dimen name="more_news_titlebar_height">55dp</dimen>
+
+    //new dimen
+    <dimen name="birthday_card_width">106dp</dimen>
+    <dimen name="birtday_image_width">80dp</dimen>
+    <dimen name="birthday_image_margin">8dp</dimen>
+    <dimen name="birthday_text_margin">3dp</dimen>
+
+
+    <dimen name="horoscope_image_width">80dp</dimen>
+    <dimen name="horoscope_text_margin">3dp</dimen>
+
+
+    <dimen name="people_card_width">100dp</dimen>
+    <dimen name="people_image_margin">10dp</dimen>
+
+
+    <dimen name="business_image_height">55dp</dimen>
+    <dimen name="business_image_margin">3dp</dimen>
+    <dimen name="business_text_margin">8dp</dimen>
+
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Activities.News.NewsPostActivity">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_image_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ef3944"
+                android:text="ATTACH IMAGE"
+                android:drawableLeft="@mipmap/attach"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/postImage"
+                android:src="@mipmap/add_photo"
+                android:padding="5dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/value20"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEWS DESCRIPTION"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#666666"/>
+
+                <EditText
+                    android:id="@+id/news_body"
+                    style="@style/CustomEditTextLogInSignUpNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Tell us the complete story"
+                    android:inputType="textMultiLine"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_up_button"
+                style="@style/PrimaryTransparentButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/primary_button_height"
+                android:layout_alignParentBottom="true"
+                android:text="POST NEWS"
+                android:textSize="13dp"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/activity_news_post"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingTop="@dimen/activity_vertical_margin">-->
+
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/postImage"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:text="News Body"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/colorBlack"/>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/news_body"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:minHeight="120dp"-->
+                <!--android:layout_below="@id/title"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--android:background="@drawable/background_editbox_gray"/>-->
+
+
+
+
+        <!--</RelativeLayout>-->
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="NAME"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/full_name"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="DATE OF BIRTH"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="share your date of birth to get horoscope update"
+                android:textColor="#80B1EA"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/birthdayEditText"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/dateOfBirth"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="GENDER"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/gender_spn"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/dropdown"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="Gender"
+                android:inputType="textPostalAddress" />
+
+            <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/spCountries"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:prompt="@string/country_prompt"-->
+            <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+            <!--android:entries="@array/country_arrays"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="ABOUT ME"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/about_et"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Write something about you"
+                android:inputType="textPostalAddress" />
+
+            <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/spCountries"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:prompt="@string/country_prompt"-->
+            <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+            <!--android:entries="@array/country_arrays"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp" />-->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="LOCATION YOU LIVE IN"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="share your location to get news, recent offer around you"
+                android:textColor="#80B1EA"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/address"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Address Line"
+                android:inputType="textMultiLine"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/district_spn"
+                    style="@style/CustomEditTextLogInSignUpNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/dropdown"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/district"
+                    android:inputType="textPostalAddress" />
+
+                <EditText
+                    android:id="@+id/thana_spn"
+                    style="@style/CustomEditTextLogInSignUpNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/dropdown"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="Thana"
+                    android:inputType="textPostalAddress" />
+
+                <!--<Spinner-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/spDistrict"-->
+                <!--android:spinnerMode="dialog"-->
+                <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:layout_marginRight="5dp"/>-->
+
+                <!--<Spinner-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/spThana"-->
+                <!--android:spinnerMode="dialog"-->
+                <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:layout_marginLeft="5dp"/>-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="PROFESSIONAL BACKGROUND"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="share your background to get business, job, carrer related updates"
+                android:textColor="#80B1EA"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/spProfession"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"/>-->
+
+            <EditText
+                android:id="@+id/profession_text"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@mipmap/dropdown"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="Profession"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/profession_org"
+                style="@style/CustomEditTextLogInSignUpNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:hint="Organization Name"
+                android:inputType="textPostalAddress" />
+        </LinearLayout>
+
+        <!--<FrameLayout android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp">-->
+
+        <!--<AutoCompleteTextView-->
+        <!--android:id="@+id/et_book_title"-->
+        <!--android:inputType="textCapSentences"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:imeOptions="flagNoExtractUi|actionSearch"/>-->
+        <!--<ProgressBar-->
+        <!--android:id="@+id/pb_loading_indicator"-->
+        <!--style="?android:attr/progressBarStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical|right"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone"/>-->
+        <!--</FrameLayout>-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

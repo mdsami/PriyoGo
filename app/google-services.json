@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "663048202005",
+    "firebase_url": "https://priyo-438fd.firebaseio.com",
+    "project_id": "priyo-438fd",
+    "storage_bucket": "priyo-438fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663048202005:android:df781e1b42d15406",
+        "android_client_info": {
+          "package_name": "com.priyo.go"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663048202005-s96u8fcuevs68v9re2ohrm4fs4uh3fki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGQH3TgNeRIig07yuLL8jVXbHsVqYTURo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll1"
+    android:layout_width="@dimen/birthday_card_width"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:minWidth="@dimen/birthday_card_width"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="2dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:layout_margin="3dp"
+            android:src="@mipmap/balloon" />
+
+        <com.priyo.go.CustomView.ProfileImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="@dimen/birtday_image_width"
+            android:layout_height="@dimen/birtday_image_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/birthday_image_margin">
+
+        </com.priyo.go.CustomView.ProfileImageView>
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image_view"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/birthday_text_margin"
+            android:layout_marginRight="@dimen/birthday_text_margin"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/birthday_date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_text_view"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/birthday_text_margin"
+            android:layout_marginRight="@dimen/birthday_text_margin"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_extra_smaller" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

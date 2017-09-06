@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:id="@+id/profile_picture_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.priyo.go.CustomView.ProfileImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/status_holder"
+            android:layout_toRightOf="@+id/profile_picture_holder"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_rl">
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/TextStylePrimaryMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/date"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/TextStylePrimaryMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:textColor="#AAA" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/mobile_number"
+                style="@style/TextStylePrimaryMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_rl"
+                android:text="+8801913-******"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/full_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/wish_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value180" />
+
+        <TextView
+            android:id="@+id/wish_full"
+            style="@style/TextStylePrimaryMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/date"/>
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorDivider" />
+
+</LinearLayout>

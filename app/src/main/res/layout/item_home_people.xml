@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/people_card_width"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:minWidth="@dimen/people_card_width">
+
+    <RelativeLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.priyo.go.CustomView.ProfileImageView
+                android:id="@+id/profile_image_view"
+                android:layout_width="@dimen/birtday_image_width"
+                android:layout_height="@dimen/birtday_image_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/people_image_margin">
+
+            </com.priyo.go.CustomView.ProfileImageView>
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/birthday_text_margin"
+                android:layout_marginRight="@dimen/birthday_text_margin"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll2"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ll2"
+            android:layout_marginBottom="@dimen/people_image_margin"
+            android:layout_marginTop="@dimen/people_image_margin"
+            android:background="#ddd">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

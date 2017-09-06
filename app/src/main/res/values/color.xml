@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackgroundPrimary">#FFFFFF</color>
+    //Basic Color
+    <color name="colorBlack">#000000</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="backgroundButtonPrimary">#FF2631</color>
+    <color name="tour_page_text_color">#757575</color>
+    <color name="colorPrimary">#FF2631</color>
+    <color name="colorPrimaryDark">#EE121D </color>
+
+    <color name="colorFacebookDark">#39579B</color>
+    <color name="colorFacebookLight">#4F6FAA</color>
+    <color name="colorGrayTransparent">#50757575</color>
+
+
+
+
+    <color name="colorPrimaryMediumDark">#00897B</color>
+    <color name="colorPrimaryLight">#26A69A</color>
+    <color name="colorPrimaryLighter">#26A69A</color>
+    <color name="colorLightPrimaryAccent">#26A69A</color>
+    <color name="colorAccent">#26A69A</color>
+    <color name="colorAmber">#FFC107</color>
+    <color name="colorDivider">#DDDDDD</color>
+    <color name="colorLightGray">#E5E5E5</color>
+    <color name="colorGray">#737373</color>
+    <color name="colorMediumGray">#C5C7C8</color>
+    <color name="colorTransparentLightGray">#EEE5E5E5</color>
+    <color name="colorDividerGapGray">#f3f3f3</color>
+    <color name="colorBorderGray">#c3c1c1</color>
+    <color name="colorBackground">#F1F2F3</color>
+    <color name="colorTextPrimary">#6D6D6D</color>
+    <color name="colorTextSecondary">#B3000000</color>
+    <color name="colorBlackTransparent">#70000000</color>
+    <color name="bottle_green">#009688</color>
+    <color name="colorDarkOrange">#f39431</color>
+    <color name="colorBalanceBackground">#e3e3e3</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorYellow">#ffc000</color>
+    <color name="colorDarkKGray">#484848</color>
+    <!-- zxinglib colors -->
+    <color name="zxinglib_status_text">#ffffffff</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <!-- Random background colors -->
+    <color name="background_bright_pink">#C15562</color>
+    <color name="background_orange">#D99F66</color>
+    <color name="background_yellow">#D5BD5D</color>
+    <color name="background_spring_green">#6EC667</color>
+    <color name="background_cyan">#BBB2BD</color>
+    <color name="background_azure">#53B3BC</color>
+    <color name="background_blue">#568CBE</color>
+    <color name="background_violet">#C15562</color>
+    <color name="background_magenta">#AE7575</color>
+    <color name="background_default">#547bca</color>
+    <color name="background_red">#F41051</color>
+
+    <color name="verified_background">#009688</color>
+    <color name="background_iconified_button_icon">#26A69A</color>
+    <color name="background_iconified_button_disabled">#009688</color>
+
+    <color name="colorBackgroundButtonWithOpacity">#59009688</color>
+    <color name="colorBackgroundButtonWithOpacityPressed">#1A009688</color>
+
+    <color name="not_color">#C30202</color>
+
+    <color name="colorDark">#22DEDEDD</color>
+
+    <color name="tabColor">#8D1016</color>
+
+    <color name="divider_gray">#AAe2e2e2</color>
+    <color name="text_gray">#8C000000</color>
+
+</resources>

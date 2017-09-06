@@ -1,0 +1,58 @@
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="thumbnail_min_size">110dip</dimen>
+
+    <dimen name="titile_text_size_details_page">27sp</dimen>
+    <dimen name="details_page_text_margin">15dp</dimen>
+    <dimen name="details_page_web_margin">8dp</dimen>
+    <dimen name="details_page_web_text_size">20px</dimen>
+
+    <dimen name="details_page_spacing_view">20dp</dimen>
+
+    <dimen name="details_page_flex_layout_height">45dp</dimen>
+    <dimen name="details_page_flex_layout_min_width">75dp</dimen>
+
+
+    <dimen name="text_size_large">36sp</dimen>
+    <dimen name="text_size_large_medium">30sp</dimen>
+    <dimen name="text_size_medium">26sp</dimen>
+    <dimen name="text_size_small_medium">20sp</dimen>
+    <dimen name="text_size_small">17sp</dimen>
+    <dimen name="text_size_extra_small">15sp</dimen>
+    <dimen name="text_size_extra_small_1">16sp</dimen>
+    <dimen name="text_size_extra_smaller">12sp</dimen>
+
+    <dimen name="more_news_image_size">80dip</dimen>
+    <dimen name="more_pading">8dip</dimen>
+
+
+    <dimen name="tabed_news_card_margin">3dip</dimen>
+    <dimen name="tabed_news_gap">3dip</dimen>
+
+    <dimen name="tabed_new_title_text_size">18sp</dimen>
+    <dimen name="tabed_new_subtitle_text_size">15sp</dimen>
+    <dimen name="tabed_new_time_text_size">14sp</dimen>
+
+    <dimen name="more_news_titlebar_padding">8dp</dimen>
+    <dimen name="more_news_titlebar_height">60dp</dimen>
+    <dimen name="birthday_card_width">130dp</dimen>
+    <dimen name="birtday_image_width">100dp</dimen>
+    <dimen name="birthday_image_margin">10dp</dimen>
+    <dimen name="birthday_text_margin">5dp</dimen>
+
+    <dimen name="horoscope_image_width">100dp</dimen>
+    <dimen name="horoscope_text_margin">5dp</dimen>
+
+    <dimen name="people_card_width">130dp</dimen>
+    <dimen name="people_image_margin">15dp</dimen>
+
+
+    <dimen name="business_image_height">80dp</dimen>
+    <dimen name="business_image_margin">5dp</dimen>
+    <dimen name="business_text_margin">10dp</dimen>
+
+
+</resources>
+
+
+

@@ -1,0 +1,265 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActionBarNoElevation" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/Theme.ActionBar.ZeroElevation</item>
+        <item name="actionBarStyle">@style/Theme.ActionBar.ZeroElevation</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Theme.ActionBar.ZeroElevation" parent="style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="elevation">0dp</item>
+    </style>
+
+
+    <style name="TextStylePrimaryLargeBold" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextStylePrimaryLarge" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextStylePrimaryMediumBlack" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextStylePrimarySmall" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/tour_page_text_color</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ButtonStyleFacebook" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_button_facebook</item>
+    </style>
+
+    <style name="ButtonStyleRound" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_button_primary</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+
+    <style name="PrimaryTransparentButton" parent="@android:style/Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/backgroundButtonPrimary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="CustomEditTextLogInSignUp" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/value10</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+    </style>
+
+    <style name="CustomEditTextLogInSignUpNormal" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+    </style>
+
+    <style name="CustomEditTextStyle" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+    </style>
+
+    <style name="CustomEditTextSignUp" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:fontFamily">roboto</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/value10</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+    </style>
+
+    <style name="CustomTextInputLayoutWithMargin" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:fontFamily">roboto</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/divider_space</item>
+        <item name="android:background">@color/colorDivider</item>
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginTop">@dimen/value5</item>
+        <item name="android:layout_marginBottom">@dimen/value5</item>
+    </style>
+
+
+    <style name="CustomEditText" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/text_size_small_medium</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">@dimen/value10</item>
+        <item name="android:paddingBottom">@dimen/value10</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+    </style>
+
+    <style name="ButtonStyleMediumGrey" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_button_gray</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="ButtonStyleMedium" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_button_primary</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+
+    <style name="ButtonStyleMain" parent="ButtonStyleMedium">
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin_double</item>
+        <!--<item name="android:textSize">18.0sp</item>-->
+        <!--<item name="android:textColor">@android:color/white</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:background">@drawable/background_button_bottom</item>-->
+        <!--<item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>-->
+        <!--<item name="android:paddingRight">@dimen/activity_horizontal_margin</item>-->
+    </style>
+
+    <style name="ButtonStyleLarge" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_button_primary</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+
+    <style name="TextStylePrimaryMedium" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="AppTheme">
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorLightPrimaryAccent</item>
+        <item name="colorControlNormal">@color/colorGray</item>
+    </style>
+
+    <style name="DividerOnly">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/divider_space</item>
+        <item name="android:background">@color/colorDivider</item>>
+    </style>
+
+    <style name="CheckBoxStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingTop">@dimen/value6</item>
+        <item name="android:paddingBottom">@dimen/value6</item>
+        <item name="android:paddingLeft">@dimen/value12</item>
+        <item name="android:paddingRight">@dimen/value12</item>
+    </style>
+
+    <style name="ContactsSelectorStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/value5</item>
+        <item name="android:paddingBottom">@dimen/value5</item>
+        <item name="android:paddingLeft">@dimen/value15</item>
+        <item name="android:paddingRight">@dimen/value15</item>
+    </style>
+
+    <style name="TabStyleDashBoard" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabBackground">@drawable/tab_selector_color_dashboard</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextAppearance">@style/TextAppearanceForDashBoard</item>
+        <item name="tabIndicatorHeight">0dp</item>
+
+    </style>
+
+
+    <style name="TextAppearanceForDashBoard" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorLightGray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="TabStyleNews" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabPaddingStart">10dp</item>
+        <item name="tabPaddingEnd">10dp</item>
+        <item name="tabIndicatorColor">@color/colorWhite</item>
+        <item name="tabTextAppearance">@style/TextAppearanceForNews</item>
+
+    </style>
+
+
+    <style name="TextAppearanceForNews" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/tabColor</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+</resources>

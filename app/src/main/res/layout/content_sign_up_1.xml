@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.SignUpActivity"
+    tools:showIn="@layout/activity_sign_up">
+
+
+    <Button
+        android:id="@+id/sign_up_button"
+        style="@style/PrimaryTransparentButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/primary_button_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/update_profile"
+        android:textSize="@dimen/text_size_medium" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sign_up_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/value15"
+            android:paddingLeft="@dimen/value15"
+            android:paddingRight="@dimen/value10"
+            android:paddingTop="@dimen/value15">
+
+
+            <!--<com.facebook.login.widget.LoginButton-->
+                <!--android:id="@+id/login_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/ButtonStyleFacebook"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_margin="4dp"-->
+                <!--android:paddingTop="12dp"-->
+                <!--android:paddingBottom="12dp"-->
+                <!--android:layout_marginTop="@dimen/value15"-->
+                <!--android:layout_marginBottom="@dimen/value20"-->
+                <!--android:paddingLeft="@dimen/value30"-->
+                <!--android:paddingRight="@dimen/value30"-->
+                <!--android:text="@string/facebook_button_text"/>-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/update_via_facebook_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/primary_button_height"-->
+                <!--style="@style/ButtonStyleFacebook"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="@dimen/value15"-->
+                <!--android:layout_marginBottom="@dimen/value20"-->
+                <!--android:paddingLeft="@dimen/value30"-->
+                <!--android:paddingRight="@dimen/value30"-->
+                <!--android:text="@string/facebook_button_text"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Public"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/CustomTextInputLayoutWithMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/is_name_public"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/full_name"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Full Name"
+                            android:paddingLeft="15dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/is_name_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/CustomTextInputLayoutWithMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/is_bday_public"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/birthdayEditText"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/dateOfBirth"
+                            android:inputType="number"
+                            android:paddingLeft="15dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/is_bday_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/CustomTextInputLayoutWithMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/is_address_public"
+                        android:minHeight="50dp"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/address"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Address Line"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/is_address_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/CustomTextInputLayoutWithMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/is_profession_public"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/profession_text_view"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="Profession"
+                            android:inputType="textPostalAddress"
+                            android:paddingLeft="15dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/is_profession_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/CustomTextInputLayoutWithMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/is_district_public"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/district"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/district"
+                            android:inputType="textPostalAddress"
+                            android:paddingLeft="15dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/is_district_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/CustomTextInputLayoutWithMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/is_thana_public"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/thana"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="Thana"
+                            android:paddingLeft="15dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/is_thana_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/CustomTextInputLayoutWithMargin"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="55dp"-->
+                        <!--android:theme="@style/CustomTextInputLayout"-->
+                        <!--android:layout_marginTop="@dimen/value20">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/genderEditText"-->
+                            <!--style="@style/CustomEditTextLogInSignUp"-->
+                            <!--android:background="@android:color/transparent"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:focusable="false"-->
+                            <!--android:paddingRight="@dimen/activity_horizontal_margin_semi_double"-->
+                            <!--android:text="@string/gender"-->
+                            <!--android:textColor="@color/colorGray"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:paddingLeft="15dp"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/checkBoxMale"-->
+                        <!--style="@style/CheckBoxStyle"-->
+                        <!--android:layout_toLeftOf="@+id/checkBoxFemale"-->
+                        <!--android:background="@drawable/background_left_round_checkbox"-->
+                        <!--android:button="@null"-->
+                        <!--android:text="@string/male"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textSize="@dimen/value12"-->
+                        <!--android:gravity="center_vertical"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/checkBoxFemale"-->
+                        <!--style="@style/CheckBoxStyle"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginRight="@dimen/value5"-->
+                        <!--android:background="@drawable/background_right_round_checkbox"-->
+                        <!--android:button="@null"-->
+                        <!--android:text="@string/female"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textSize="@dimen/value12"-->
+                        <!--android:gravity="center_vertical"/>-->
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/profession_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/district_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/thana_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

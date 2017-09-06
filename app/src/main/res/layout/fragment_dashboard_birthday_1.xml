@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/more_news_titlebar_padding"
+    android:paddingRight="@dimen/more_news_titlebar_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_news_titlebar_height"
+        android:id="@+id/news_rl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Birthdays"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_small_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MORE"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/text_size_extra_small"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="130dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/holder"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:gravity="center"
+            android:id="@+id/progress_rl"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar4" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

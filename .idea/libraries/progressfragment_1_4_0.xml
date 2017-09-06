@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="progressfragment-1.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/bb671b664162570b6ca1f2f0f27e5913513e6e53/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/bb671b664162570b6ca1f2f0f27e5913513e6e53/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.johnkil.android-progressfragment/progressfragment/1.4.0/a8f386df729907e53af27a03bb39fc1b2257d2c7/progressfragment-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

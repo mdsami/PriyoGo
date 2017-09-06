@@ -1,0 +1,46 @@
+<resources>
+    <dimen name="thumbnail_min_size">160dip</dimen>
+    <dimen name="more_news_image_size">110dip</dimen>
+    <dimen name="more_pading">8dip</dimen>
+    <dimen name="tabed_news_card_margin">3dip</dimen>
+    <dimen name="tabed_news_gap">3dip</dimen>
+
+
+    <dimen name="text_size_large">38sp</dimen>
+    <dimen name="text_size_large_medium">32sp</dimen>
+    <dimen name="text_size_medium">28sp</dimen>
+    <dimen name="text_size_small_medium">22sp</dimen>
+    <dimen name="text_size_small">19sp</dimen>
+    <dimen name="text_size_extra_small">17sp</dimen>
+    <dimen name="text_size_extra_small_1">18sp</dimen>
+    <dimen name="text_size_extra_smaller">14sp</dimen>
+
+
+    <dimen name="tabed_new_title_text_size">20sp</dimen>
+    <dimen name="tabed_new_subtitle_text_size">17sp</dimen>
+    <dimen name="tabed_new_time_text_size">16sp</dimen>
+
+
+
+    <dimen name="more_news_titlebar_padding">10dp</dimen>
+    <dimen name="more_news_titlebar_height">65dp</dimen>
+
+    <dimen name="birthday_card_width">160dp</dimen>
+    <dimen name="birtday_image_width">120dp</dimen>
+    <dimen name="birthday_image_margin">15dp</dimen>
+    <dimen name="birthday_text_margin">7dp</dimen>
+
+    <dimen name="horoscope_image_width">120dp</dimen>
+    <dimen name="horoscope_text_margin">7dp</dimen>
+
+
+    <dimen name="people_card_width">160dp</dimen>
+    <dimen name="people_image_margin">20dp</dimen>
+
+    <dimen name="business_image_height">100dp</dimen>
+    <dimen name="business_image_margin">8dp</dimen>
+    <dimen name="business_text_margin">15dp</dimen>
+</resources>
+
+
+

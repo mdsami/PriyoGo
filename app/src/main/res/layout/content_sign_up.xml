@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.SignUpActivity"
+    tools:showIn="@layout/activity_sign_up">
+
+
+    <Button
+        android:id="@+id/sign_up_button"
+        style="@style/PrimaryTransparentButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/primary_button_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/update_profile"
+        android:textSize="@dimen/text_size_medium" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sign_up_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="NAME"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/full_name"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="NAME" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="DATE OF BIRTH"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="share your date of birth to get horoscope update"
+                        android:textColor="#80B1EA"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/birthdayEditText"
+                        style="@style/CustomEditTextLogInSignUpNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/dateOfBirth"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="GENDER"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/gender_spn"
+                        style="@style/CustomEditTextLogInSignUpNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/dropdown"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Gender"
+                        android:inputType="textPostalAddress" />
+
+                    <!--<Spinner-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:id="@+id/spCountries"-->
+                        <!--android:spinnerMode="dialog"-->
+                        <!--android:prompt="@string/country_prompt"-->
+                        <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+                        <!--android:entries="@array/country_arrays"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp" />-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="LOCATION YOU LIVE IN"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="share your location to get news, recent offer around you"
+                        android:textColor="#80B1EA"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+                    <EditText
+                        android:id="@+id/address"
+                        style="@style/CustomEditTextLogInSignUpNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:hint="Address Line"
+                        android:inputType="textMultiLine"
+                        android:visibility="gone"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/district_spn"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:drawableRight="@mipmap/dropdown"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/district"
+                            android:inputType="textPostalAddress" />
+
+                        <EditText
+                            android:id="@+id/thana_spn"
+                            style="@style/CustomEditTextLogInSignUpNormal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:drawableRight="@mipmap/dropdown"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="Thana"
+                            android:inputType="textPostalAddress" />
+
+                        <!--<Spinner-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:id="@+id/spDistrict"-->
+                            <!--android:spinnerMode="dialog"-->
+                            <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:paddingBottom="10dp"-->
+                            <!--android:layout_marginRight="5dp"/>-->
+
+                        <!--<Spinner-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:id="@+id/spThana"-->
+                            <!--android:spinnerMode="dialog"-->
+                            <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:paddingBottom="10dp"-->
+                            <!--android:layout_marginLeft="5dp"/>-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="PROFESSIONAL BACKGROUND"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="share your background to get business, job, carrer related updates"
+                        android:textColor="#80B1EA"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <!--<Spinner-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:id="@+id/spProfession"-->
+                        <!--android:spinnerMode="dialog"-->
+                        <!--style="@android:style/Widget.Holo.Light.Spinner"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp"/>-->
+
+                    <EditText
+                        android:id="@+id/profession_text"
+                        style="@style/CustomEditTextLogInSignUpNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@mipmap/dropdown"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Profession"
+                        android:inputType="textPostalAddress" />
+
+                    <EditText
+                        android:id="@+id/profession_org"
+                        style="@style/CustomEditTextLogInSignUpNormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:hint="Organization Name"
+                        android:inputType="textPostalAddress" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/profession_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/district_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/thana_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

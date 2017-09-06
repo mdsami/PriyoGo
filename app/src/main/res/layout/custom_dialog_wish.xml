@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/profile_picture_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.priyo.go.CustomView.ProfileImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/status_holder"
+            android:layout_toRightOf="@+id/profile_picture_holder"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextStylePrimaryMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/TextStylePrimaryMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_below="@+id/title"
+                android:textColor="@color/colorTextPrimary" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorDivider" />
+
+
+    <RelativeLayout
+        android:id="@+id/info_holder_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/status_holder"
+        android:layout_toRightOf="@+id/profile_picture_holder"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/wish_title"
+            style="@style/TextStylePrimaryMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/wish_desc"
+            style="@style/TextStylePrimaryMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_below="@+id/wish_title"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

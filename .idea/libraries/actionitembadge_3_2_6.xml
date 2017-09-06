@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="actionitembadge-3.2.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/4c1bb8158bb987007397fac34cb3f808a424c116/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4c1bb8158bb987007397fac34cb3f808a424c116/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/actionitembadge/3.2.6/467fba1737c541965933a7520d27c60eb1d1f16d/actionitembadge-3.2.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
